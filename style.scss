@@ -32,6 +32,11 @@ body {
     min-height: 100vh;
 }
 
+// TODO: Place copyright on bottom of page (without sticky) such that it's always on bottom of screen
+main {
+    min-height: 85vh;
+}
+
 a:any-link {
     color: white;
 }
