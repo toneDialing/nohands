@@ -18,5 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             bar.style.backgroundColor = 'green';
         }); */
         document.querySelector('.header_menu_icon').classList.toggle('menu_clicked');
+        document.querySelector('.header_nav_list').classList.toggle('menu_clicked');
     };
 });
