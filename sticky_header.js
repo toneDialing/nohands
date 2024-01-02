@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('sticky_header_container');
+    const main = document.querySelector('main');
     let initial_unscrolled_position = header.offsetTop;
 
     //Recalculate initial_unscrolled_position whenever window is resized
@@ -10,9 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (this.scrollY > initial_unscrolled_position) {
             header.classList.add('stick_on_scroll');
+            main.classList.add('stick_on_scroll');
         }
         else {
             header.classList.remove('stick_on_scroll');
+            main.classList.remove('stick_on_scroll');
         }
     });
 });
