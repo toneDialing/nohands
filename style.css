@@ -43,6 +43,10 @@ a:any-link {
   top: 0;
 }
 
+#header_photo {
+  z-index: 2;
+}
+
 #sticky_header_container {
   background-color: black;
   position: relative;
@@ -51,6 +55,11 @@ a:any-link {
   /* position: sticky; */
   /* top: 0; */
   z-index: 1;
+}
+
+#sticky_header_container.stick_on_scroll {
+  position: fixed;
+  top: 0;
 }
 
 #sticky_header_text {
