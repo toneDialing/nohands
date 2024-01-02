@@ -18,6 +18,11 @@ input, button, textarea {
   white-space: nowrap;
 }
 
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
 html {
   scroll-behavior: smooth;
   color: white;

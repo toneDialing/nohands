@@ -21,6 +21,11 @@ input, button, textarea {
     white-space: nowrap;
 }
 
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
 // General Styles //
 
 html {
