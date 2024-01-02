@@ -49,7 +49,9 @@ a:any-link {
 }
 
 #header_photo {
+  position: relative;
   z-index: 2;
+  background-color: black;
 }
 
 #sticky_header_container {

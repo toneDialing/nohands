@@ -54,7 +54,9 @@ a:any-link {
 }
 
 #header_photo {
-    z-index: 2; // TODO: nav_container is still on top of image despite lower z-index
+    position: relative;
+    z-index: 2;
+    background-color: black;
 }
 
 #sticky_header_container {
