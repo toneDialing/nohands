@@ -74,6 +74,7 @@ a:any-link {
 
 #sticky_header_container {
     background-color: black;
+    background-image: linear-gradient(to bottom, black, rgb(42, 42, 42));
     position: relative;
     width: 100%;
     height: var(--STICKY_HEADER_HEIGHT);
@@ -106,7 +107,7 @@ a:any-link {
     right: 0;
     width: 5rem;
     height: 2.5rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 2;
 }
 
