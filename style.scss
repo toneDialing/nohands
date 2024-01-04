@@ -75,6 +75,7 @@ a:any-link {
 #sticky_header_container {
     background-color: black;
     background-image: linear-gradient(to bottom, black, rgb(42, 42, 42));
+    box-shadow: 0 0 10px #333;
     position: relative;
     width: 100%;
     height: var(--STICKY_HEADER_HEIGHT);
@@ -140,7 +141,7 @@ a:any-link {
     background-color: red;
 }
 
-#nav_container {
+#nav_container { // TODO: If menu container is transparent, nav container can't be visible until it's below menu
     display: block;
     padding: 0.1rem 0;
     background-color: gray;
