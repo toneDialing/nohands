@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 // RESET //
 *, *::after, *::before {
     margin: 0;
@@ -95,6 +97,7 @@ a:any-link {
             //Without it, there's no stick.
     justify-content: center;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #no_hands_title::after {
