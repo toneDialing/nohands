@@ -18,10 +18,11 @@ input, button, textarea {
 }
 
 // Variables //
-:root {
+$menu_container_height: 2.5rem;
+$menu_container_width: 5rem;
+
+:root { // TODO: Convert these into Sass-style variables
     --STICKY_HEADER_HEIGHT: 80px;
-    --MENU_CONTAINER_HEIGHT: 2.5rem;
-    --MENU_CONTAINER_WIDTH: 5rem;
 
     @media screen and (min-width: 481px) {
         --STICKY_HEADER_HEIGHT: 45px;
@@ -115,8 +116,8 @@ a:any-link {
     position: absolute; //This is the positioning I want relative to parent. Need to use JS to scroll
     top: 0;
     right: 0;
-    width: var(--MENU_CONTAINER_WIDTH);
-    height: var(--MENU_CONTAINER_HEIGHT);
+    width: $menu_container_width;
+    height: $menu_container_height;
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
 }
@@ -153,7 +154,7 @@ a:any-link {
 
 #nav_display_container {
     position: absolute;
-    top: var(--MENU_CONTAINER_HEIGHT);
+    top: $menu_container_height;
     right: 0;
     height: 7rem;
     width: 5rem;
@@ -161,7 +162,7 @@ a:any-link {
     overflow: hidden;
 }
 
-#nav_container { // TODO: If menu container is transparent, nav container can't be visible until it's below menu
+#nav_container {
     display: block;
     padding: 0.1rem 0;
     background-color: gray;

@@ -17,8 +17,6 @@ input, button, textarea {
 
 :root {
   --STICKY_HEADER_HEIGHT: 80px;
-  --MENU_CONTAINER_HEIGHT: 2.5rem;
-  --MENU_CONTAINER_WIDTH: 5rem;
 }
 @media screen and (min-width: 481px) {
   :root {
@@ -108,8 +106,8 @@ a:any-link {
   position: absolute;
   top: 0;
   right: 0;
-  width: var(--MENU_CONTAINER_WIDTH);
-  height: var(--MENU_CONTAINER_HEIGHT);
+  width: 5rem;
+  height: 2.5rem;
   background-color: rgba(0, 0, 0, 0);
   z-index: 2;
 }
@@ -146,7 +144,7 @@ a:any-link {
 
 #nav_display_container {
   position: absolute;
-  top: var(--MENU_CONTAINER_HEIGHT);
+  top: 2.5rem;
   right: 0;
   height: 7rem;
   width: 5rem;
