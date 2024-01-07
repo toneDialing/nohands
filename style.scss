@@ -20,6 +20,8 @@ input, button, textarea {
 // Variables //
 :root {
     --STICKY_HEADER_HEIGHT: 80px;
+    --MENU_CONTAINER_HEIGHT: 2.5rem;
+    --MENU_CONTAINER_WIDTH: 5rem;
 
     @media screen and (min-width: 481px) {
         --STICKY_HEADER_HEIGHT: 45px;
@@ -113,8 +115,8 @@ a:any-link {
     position: absolute; //This is the positioning I want relative to parent. Need to use JS to scroll
     top: 0;
     right: 0;
-    width: 5rem;
-    height: 2.5rem;
+    width: var(--MENU_CONTAINER_WIDTH);
+    height: var(--MENU_CONTAINER_HEIGHT);
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
 }
@@ -123,6 +125,7 @@ a:any-link {
     position: absolute;
     top: 0.6rem;
     right: 0.4rem;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 2;
 }
 
@@ -148,6 +151,16 @@ a:any-link {
     background-color: red;
 }
 
+#nav_display_container {
+    position: absolute;
+    top: var(--MENU_CONTAINER_HEIGHT);
+    right: 0;
+    height: 7rem;
+    width: 5rem;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
 #nav_container { // TODO: If menu container is transparent, nav container can't be visible until it's below menu
     display: block;
     padding: 0.1rem 0;
@@ -161,7 +174,7 @@ a:any-link {
 }
 
 .menu_clicked#nav_container {
-    transform: translate(0, 12.5rem);
+    transform: translate(0, 10rem);
 }
 
 #nav_menu_ul {

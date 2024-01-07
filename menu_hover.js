@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     document.querySelector('#menu_icon').onmouseleave = function() {
-        document.querySelector('#menu_icon').style.backgroundColor = 'black';
         document.querySelectorAll('.bar').forEach(function(bar) {
             bar.style.boxShadow = 'none';
             /* bar.style.border = 'none'; */
