@@ -53,6 +53,10 @@ main.stick_on_scroll {
   padding-top: var(--STICKY_HEADER_HEIGHT);
 }
 
+h2, h3 {
+  text-align: center;
+}
+
 p {
   line-height: 1.5;
 }
