@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); //Josefin Sans
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap'); //Karla (+ italic)
 
 // RESET //
 *, *::after, *::before {
@@ -186,6 +187,11 @@ a:any-link {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-family: 'Karla', sans-serif;
+}
+
+#nav_menu_ul a:hover {
+    font-style: italic;
 }
 
 a {
