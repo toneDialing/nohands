@@ -103,10 +103,8 @@ a:any-link {
 }
 
 #sticky_header_text {
-    position: sticky;
-    top: 0; // This is necessary to specify what position the stickiness is relative to.
-            //Without it, there's no stick.
-    justify-content: center;
+    height: var(--STICKY_HEADER_HEIGHT);
+    padding: 10px 0;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -201,6 +199,20 @@ a:hover, a:focus-visible {
 a:active {
     text-decoration: underline;
     color: cyan;
+}
+
+#hero {
+    position: relative;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: blue;
+    text-shadow: 2px 2px 5px lightblue;
+    background-image: url("haroldCC.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .footer {
