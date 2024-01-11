@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const header_photo = document.getElementById('header_photo');
     const header = document.getElementById('sticky_header_container');
     const main = document.querySelector('main');
-    let initial_unscrolled_position = header.offsetTop;
+    let initial_unscrolled_position = header_photo.offsetHeight;
 
     //Recalculate initial_unscrolled_position whenever window is resized
+    //Assumes margin of header_photo to be 0
+    // TODO: Strengthen by accounting for margin size. Note that marginTop is returned as a string with 'px',
+    // and so regular number conversion with Number() or + operator doesn't work.
     window.addEventListener('resize', function() {
-        initial_unscrolled_position = header.offsetTop;
+        initial_unscrolled_position = header_photo.offsetHeight;
     });
 
     window.addEventListener('scroll', function() {
