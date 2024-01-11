@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); //Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap'); //Karla (+ italic)
 
+//TODO: Header text no longer sticks after adjusting window size before refreshing (works after refresh)
+
 // RESET //
 *, *::after, *::before {
     margin: 0;
@@ -219,6 +221,15 @@ a:active {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#new_sonic_world {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#paragraph_links a {
+    text-decoration: underline;
 }
 
 .footer {

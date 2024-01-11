@@ -212,6 +212,15 @@ a:active {
   background-size: cover;
 }
 
+#new_sonic_world {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#paragraph_links a {
+  text-decoration: underline;
+}
+
 .footer {
   bottom: 0;
   text-align: center;
