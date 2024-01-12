@@ -66,6 +66,14 @@ a:any-link {
   color: white;
 }
 
+.border {
+  aspect-ratio: 9/1;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -215,6 +223,15 @@ a:active {
 #new_sonic_world {
   padding-top: 1rem;
   text-align: center;
+  background-color: #6198ff;
+}
+
+#blue_wave {
+  background-image: url("./stacked-waves-haikei.svg");
+}
+
+#paragraph_links {
+  background-color: #004cbb;
 }
 
 #paragraph_links a {
