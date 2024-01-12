@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let initial_unscrolled_position = header_photo.offsetHeight;
 
     //Recalculate initial_unscrolled_position whenever window is resized
-    //Assumes margin of header_photo to be 0
+    //** Assumes margin of header_photo to be 0 **//
     window.addEventListener('resize', function() {
         initial_unscrolled_position = header_photo.offsetHeight;
     });
