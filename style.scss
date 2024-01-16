@@ -238,6 +238,8 @@ a:active {
 }
 
 //TODO: Figure out why the thin border appears around SVG image
+//Note: It disappears sometimes when zooming in or out.
+//Removing from CSS and placing directly in HTML didn't work
 #blue_wave {
     background-image: url('./stacked-waves-haikei.svg');
 }
