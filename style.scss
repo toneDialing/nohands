@@ -78,11 +78,12 @@ a:any-link {
 }
 
 .border {
-    aspect-ratio: 9/1;
+    aspect-ratio: 900/100;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    overflow: visible;
 }
 
 .header {
@@ -240,7 +241,7 @@ a:active {
 //TODO: Figure out why the thin border appears around SVG image
 //Note: It disappears sometimes when zooming in or out.
 //Removing from CSS and placing directly in HTML didn't work
-#blue_wave {
+.blue_wave {
     background-image: url('./stacked-waves-haikei.svg');
 }
 
