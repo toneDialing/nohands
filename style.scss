@@ -83,7 +83,15 @@ a:any-link {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: visible;
+    /* overflow: visible; */
+}
+
+//TODO: Figure out why the thin border appears around SVG image
+//Note: It disappears sometimes when zooming in or out.
+//Removing from CSS and placing directly in HTML didn't work
+.blue_wave {
+    background-image: url('./test.svg');
+    z-index: 100;
 }
 
 .header {
@@ -236,13 +244,6 @@ a:active {
     padding-top: 1rem;
     text-align: center;
     background-color: #6198ff;
-}
-
-//TODO: Figure out why the thin border appears around SVG image
-//Note: It disappears sometimes when zooming in or out.
-//Removing from CSS and placing directly in HTML didn't work
-.blue_wave {
-    background-image: url('./stacked-waves-haikei.svg');
 }
 
 #paragraph_links {
