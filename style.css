@@ -92,6 +92,10 @@ a:any-link {
   background-color: black;
 }
 
+#big_pic {
+  width: 100%;
+}
+
 #sticky_header_container {
   background-color: black;
   background-image: linear-gradient(to bottom, black, rgb(42, 42, 42));
