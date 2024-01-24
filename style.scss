@@ -71,6 +71,7 @@ h2, h3 {
 
 p {
     line-height: 1.5;
+    text-align: center;
 }
 
 a:any-link {
@@ -224,6 +225,14 @@ a:hover, a:focus-visible {
 a:active {
     text-decoration: underline;
     color: cyan;
+}
+
+.page_title {
+    text-align: center;
+}
+
+.artwork_title {
+    font-style: italic;
 }
 
 #hero {
