@@ -10,13 +10,68 @@
     <title>Music - NHBB</title>
     <link rel="icon" href="noHandsLogoCC - Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="get_current_year.js"></script>
+    <script src="menu_hover.js"></script>
+    <script src="sticky_header.js"></script>
 </head>
 
 <body>
-    <h1>Music</h1>
-    <p>
-        Under construction.
-    </p>
-    <a href="index.html">Back home</a>
+    <header class="header">
+        <figure id="header_photo">
+            <img src="landscape.jpeg" alt="Mountains at sunset" width="1400" height="944">
+            <figcaption class="offscreen">Mountains at sunset</figcaption>
+        </figure>
+        <div id="sticky_header_container">
+            <h1 id="sticky_header_text">
+                <span class="no_wrap" id="no_hands_title">No Hands</span>
+                <span class="no_wrap">Brass Band</span>
+            </h1>
+            <div id="menu_icon_container">
+                <nav id="menu_icon">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </nav>
+            </div>
+            <div id="nav_display_container">
+                <nav id="nav_container">
+                    <ul id="nav_menu_ul">
+                        <li>
+                            <a href="music.html">Music</a>
+                        </li>
+                        <li>
+                            <a href="shows.html">Shows</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Photos</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Music</h1>
+        <p>
+            Our EP is Off the Curb.
+        </p>
+        <a href="index.html">Back home</a>
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <p>
+            <span class="no_wrap">Copyright &copy; <time id="current_year"></time></span>
+            <span class="no_wrap">No Hands Brass Band LLC</span>
+        </p>
+    </footer>
 </body>
 </html>
