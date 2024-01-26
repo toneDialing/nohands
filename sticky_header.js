@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const header_photo = document.getElementById('header_photo');
+    const header_figure = document.getElementById('header_figure');
     const header = document.getElementById('sticky_header_container');
     const main = document.querySelector('main');
-    let initial_unscrolled_position = header_photo.offsetHeight;
+    let initial_unscrolled_position = header_figure.offsetHeight;
 
     //Recalculate initial_unscrolled_position whenever window is resized
-    //** Assumes margin of header_photo to be 0 **//
+    //** Assumes margin of header_figure to be 0 **//
     window.addEventListener('resize', function() {
-        initial_unscrolled_position = header_photo.offsetHeight;
+        initial_unscrolled_position = header_figure.offsetHeight;
     });
 
     window.addEventListener('scroll', function() {
