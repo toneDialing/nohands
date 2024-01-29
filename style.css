@@ -233,10 +233,10 @@ a:active {
   justify-content: space-between;
   color: blue;
   text-shadow: 2px 2px 5px lightblue;
-  background-image: url("haroldCC.jpeg");
+  background-image: url("blackEnsemble.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 #new_sonic_world {
