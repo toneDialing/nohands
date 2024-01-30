@@ -87,6 +87,13 @@ a:any-link {
     /* overflow: visible; */
 }
 
+//Tweak these values
+hr {
+    height: 2px;
+    border: 1px;
+    background-color: #8800cc;
+}
+
 //TODO: Figure out why the thin border appears around SVG image
 //Note: It disappears sometimes when zooming in or out.
 //Removing from CSS and placing directly in HTML didn't work
@@ -249,12 +256,16 @@ a:active {
     flex-direction: column;
     justify-content: space-between;
     color: white;
-    text-shadow: 2px 2px 5px goldenrod;
 }
 
 #hero_image {
     /* height: 80vh; */
     object-fit: contain;
+}
+
+#slogan_container {
+    background-image: url('./purpleSidePeaks.svg');
+    background-size: cover;
 }
 
 #new_sonic_world {

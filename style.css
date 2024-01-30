@@ -76,6 +76,12 @@ a:any-link {
   /* overflow: visible; */
 }
 
+hr {
+  height: 2px;
+  border: 1px;
+  background-color: #8800cc;
+}
+
 .blue_wave {
   background-image: url("./test.svg");
   z-index: 100;
@@ -232,12 +238,16 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  text-shadow: 2px 2px 5px goldenrod;
 }
 
 #hero_image {
   /* height: 80vh; */
   object-fit: contain;
+}
+
+#slogan_container {
+  background-image: url("./purpleSidePeaks.svg");
+  background-size: cover;
 }
 
 #new_sonic_world {
