@@ -99,7 +99,7 @@ hr {
 //Note: It disappears sometimes when zooming in or out.
 //Removing from CSS and placing directly in HTML didn't work
 .blue_wave {
-    background-image: url('./test.svg');
+    background-image: url('./SVGs/test.svg');
     z-index: 100;
 }
 
@@ -269,7 +269,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('./goldSlant.svg');
+    background-image: url('./SVGs/goldSlant.svg');
     background-size: cover;
     box-shadow: 0 0 10px #333;
     font-family: 'Fira Sans', sans-serif;
