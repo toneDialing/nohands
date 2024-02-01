@@ -247,30 +247,34 @@ a:active {
 }
 
 #slogan_container {
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("./SVGs/goldSlant.svg");
+  background-image: url("./SVGs/gold_wave3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 10px #333;
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
 }
 
-#slogan {
+#slogan2_container {
   color: white;
+  background-color: goldenrod;
 }
 
 #blurb {
-  background-color: #8800cc;
+  background-color: black;
+  background-image: linear-gradient(to bottom, goldenrod, #422f00);
   font-family: "Fira Sans", sans-serif;
 }
 
 #new_sonic_world {
   padding-top: 1rem;
   text-align: center;
-  background-color: #6198ff;
+  background-color: #422f00;
 }
 
 #ep img {
@@ -282,7 +286,8 @@ a:active {
 }
 
 #paragraph_links {
-  background-color: #004cbb;
+  background-color: black;
+  background-image: linear-gradient(to bottom, #422f00, black);
 }
 
 #paragraph_links a {
