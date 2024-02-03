@@ -294,6 +294,28 @@ a:active {
   text-decoration: underline;
 }
 
+.musician_bio {
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.musician_bio.right {
+  justify-content: flex-end;
+}
+
+.musician_headshot {
+  width: 35%;
+}
+.musician_headshot img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+
 .footer {
   bottom: 0;
   text-align: center;
