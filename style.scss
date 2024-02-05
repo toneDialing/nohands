@@ -75,6 +75,16 @@ p {
     text-align: center;
 }
 
+#video {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: 1px solid red;
+}
+
 a:any-link {
     color: white;
 }
