@@ -19,6 +19,7 @@ input, button, textarea {
 
 :root {
   --STICKY_HEADER_HEIGHT: 80px;
+  --PAGE_TITLE_HEIGHT: 40px;
 }
 @media screen and (min-width: 481px) {
   :root {
@@ -53,6 +54,10 @@ main {
 
 main.stick_on_scroll {
   padding-top: var(--STICKY_HEADER_HEIGHT);
+}
+
+main.stick_on_scroll_with_page_title {
+  padding-top: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
 }
 
 h2, h3 {
@@ -125,6 +130,22 @@ hr {
   padding: 10px 0;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
+}
+
+#sticky_page_title {
+  color: black;
+  background-color: goldenrod;
+  background-image: linear-gradient(to bottom, gold, goldenrod);
+  position: relative;
+  width: 100%;
+  height: var(--PAGE_TITLE_HEIGHT);
+  text-align: center;
+  font-family: "Karla", sans-serif;
+}
+
+#sticky_page_title.stick_on_scroll {
+  position: fixed;
+  top: var(--STICKY_HEADER_HEIGHT);
 }
 
 #no_hands_title::after {
@@ -222,10 +243,6 @@ a:hover, a:focus-visible {
 a:active {
   text-decoration: underline;
   color: cyan;
-}
-
-.page_title {
-  text-align: center;
 }
 
 .artwork_title {
