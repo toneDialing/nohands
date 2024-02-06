@@ -64,25 +64,6 @@ p {
   text-align: center;
 }
 
-#video {
-  border: 1px solid green;
-  display: flex;
-  justify-content: center;
-}
-#video iframe {
-  border: 1px solid red;
-  /* border-radius: 12px; */
-}
-
-#off_the_curb_spotify {
-  border: 1px solid green;
-  display: flex;
-  justify-content: center;
-}
-#off_the_curb_spotify iframe {
-  border: 1px solid red;
-}
-
 a:any-link {
   color: white;
 }
@@ -333,6 +314,29 @@ a:active {
   width: 100%;
   height: auto;
   min-width: 100px;
+}
+
+.h2_music {
+  background-color: #333;
+}
+
+#video {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+#video iframe {
+  border: 1px solid red;
+  /* border-radius: 12px; */
+}
+
+#off_the_curb_spotify {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+#off_the_curb_spotify iframe {
+  border: 1px solid red;
 }
 
 .footer {
