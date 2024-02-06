@@ -69,8 +69,17 @@ p {
   display: flex;
   justify-content: center;
 }
+#video iframe {
+  border: 1px solid red;
+  /* border-radius: 12px; */
+}
 
-iframe {
+#off_the_curb_spotify {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+#off_the_curb_spotify iframe {
   border: 1px solid red;
 }
 
