@@ -11,26 +11,31 @@ document.addEventListener('DOMContentLoaded', function() {
         initial_unscrolled_position = header_figure.offsetHeight;
     });
 
-    window.addEventListener('scroll', function() {
-        if (this.scrollY > initial_unscrolled_position) {
-            header.classList.add('stick_on_scroll');
-            if(page_title) {
+    //Adjust padding for <main> depending upon whether a page title exists
+    if(page_title) {
+        window.addEventListener('scroll', function() {
+            if (this.scrollY > initial_unscrolled_position) {
+                header.classList.add('stick_on_scroll');
                 page_title.classList.add('stick_on_scroll');
                 main.classList.add('stick_on_scroll_with_page_title');
             }
             else {
-                main.classList.add('stick_on_scroll');
-            }
-        }
-        else {
-            header.classList.remove('stick_on_scroll');
-            if(page_title) {
+                header.classList.remove('stick_on_scroll');
                 page_title.classList.remove('stick_on_scroll');
                 main.classList.remove('stick_on_scroll_with_page_title');
             }
+        });
+    }
+    else {
+        window.addEventListener('scroll', function() {
+            if (this.scrollY > initial_unscrolled_position) {
+                header.classList.add('stick_on_scroll');
+                main.classList.add('stick_on_scroll');
+            }
             else {
+                header.classList.remove('stick_on_scroll');
                 main.classList.remove('stick_on_scroll');
             }
-        }
-    });
+        });
+    }
 });
