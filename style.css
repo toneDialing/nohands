@@ -264,6 +264,7 @@ a:active {
 }
 
 #slogan_container {
+  /* border: 1px solid purple; */
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -276,22 +277,47 @@ a:active {
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
 }
+#slogan_container h2 {
+  padding-top: 1rem;
+}
+#slogan_container #off_the_curb_spotify {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+#slogan_container #off_the_curb_spotify iframe {
+  border-radius: 12px;
+  /* border: 1px solid red; */
+}
 
 #slogan2_container {
   color: white;
   background-color: goldenrod;
+  font-family: "Fira Sans", sans-serif;
+}
+#slogan2_container h3 {
+  padding-bottom: 1rem;
+  color: #d7f9f1;
+}
+
+.hr_homepage {
+  border: 1px solid black;
 }
 
 #blurb {
   background-color: black;
-  background-image: linear-gradient(to bottom, goldenrod, #422f00);
+  background-image: linear-gradient(to bottom, goldenrod, #2a652c);
   font-family: "Fira Sans", sans-serif;
 }
 
 #new_sonic_world {
-  padding-top: 1rem;
+  padding: 1rem 0 1rem 0;
   text-align: center;
-  background-color: #422f00;
+  background-color: #2a652c;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 105%;
 }
 
 #ep img {
@@ -302,11 +328,21 @@ a:active {
   margin-right: auto;
 }
 
-#paragraph_links {
+#homepage_bottom {
   background-color: black;
-  background-image: linear-gradient(to bottom, #422f00, black);
+  background-image: linear-gradient(to bottom, #2a652c, black);
+}
+#homepage_bottom #video {
+  padding: 0.5rem 0 0.5rem 0;
+  border: none;
+}
+#homepage_bottom #video iframe {
+  border: none;
 }
 
+#paragraph_links {
+  font-family: "Fira Sans", sans-serif;
+}
 #paragraph_links a {
   text-decoration: underline;
 }
@@ -398,15 +434,15 @@ a:active {
   /* border-radius: 12px; */
 }
 
-#off_the_curb_spotify {
-  border: 1px solid green;
-  display: flex;
-  justify-content: center;
-}
-#off_the_curb_spotify iframe {
-  border: 1px solid red;
-}
+/* #off_the_curb_spotify {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
 
+    iframe {
+        border: 1px solid red;
+    }
+} */
 .footer {
   bottom: 0;
   text-align: center;

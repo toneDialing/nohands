@@ -25,6 +25,9 @@ input, button, textarea {
 $menu_container_height: 2.5rem;
 $menu_container_width: 5rem;
 $faded_yellow: rgb(255, 240, 171);
+$roseda_green: #708b75;
+$mint_green: #d7f9f1;
+$forest_green: #2a652c;
 
 :root { // TODO: Convert these into Sass-style variables
     --STICKY_HEADER_HEIGHT: 80px;
@@ -285,6 +288,7 @@ a:active {
 //The thin black SVG border line seems to appear only when using "responsive" dimensions
 //in Chrome's inspect tool, so I assume it's not actually an issue.
 #slogan_container {
+    /* border: 1px solid purple; */
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -296,23 +300,52 @@ a:active {
     box-shadow: 0 0 10px #333;
     font-family: 'Fira Sans', sans-serif;
     color: goldenrod;
+
+    h2 {
+        padding-top: 1rem;
+    }
+
+    #off_the_curb_spotify {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 2rem 0;
+        
+        iframe {
+            border-radius: 12px;
+            /* border: 1px solid red; */
+        }
+    }
 }
 
 #slogan2_container {
     color: white;
     background-color: goldenrod;
+    font-family: 'Fira Sans', sans-serif;
+
+    h3 {
+        padding-bottom: 1rem;
+        color: $mint_green;
+    }
+}
+
+.hr_homepage {
+    border: 1px solid black;
 }
 
 #blurb {
     background-color: black;
-    background-image: linear-gradient(to bottom, goldenrod, #422f00);
+    background-image: linear-gradient(to bottom, goldenrod, $forest_green);
     font-family: 'Fira Sans', sans-serif;
 }
 
 #new_sonic_world {
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
     text-align: center;
-    background-color: #422f00;
+    background-color: $forest_green;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 105%;
 }
 
 //Improve this positioning
@@ -324,13 +357,28 @@ a:active {
     margin-right: auto;
 }
 
-#paragraph_links {
+#homepage_bottom {
     background-color: black;
-    background-image: linear-gradient(to bottom, #422f00, black);
+    background-image: linear-gradient(to bottom, $forest_green, black);
+
+    //#1481ba lightblue #247ba0 darkerblue
+
+    #video {
+        padding: 0.5rem 0 0.5rem 0;
+        border: none;
+
+        iframe {
+            border: none;
+        }
+    }
 }
 
-#paragraph_links a {
-    text-decoration: underline;
+#paragraph_links {
+    font-family: 'Fira Sans', sans-serif;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 /* Currently very indecisive about colors */
@@ -430,7 +478,7 @@ a:active {
     }
 }
 
-#off_the_curb_spotify {
+/* #off_the_curb_spotify {
     border: 1px solid green;
     display: flex;
     justify-content: center;
@@ -438,7 +486,7 @@ a:active {
     iframe {
         border: 1px solid red;
     }
-}
+} */
 
 .footer {
     bottom: 0;
