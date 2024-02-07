@@ -308,14 +308,14 @@ a:active {
 
 #blurb {
   background-color: black;
-  background-image: linear-gradient(to bottom, goldenrod, #2a652c);
+  background-image: linear-gradient(to bottom, goldenrod, #c8bfc7);
   font-family: "Fira Sans", sans-serif;
 }
 
 #new_sonic_world {
   padding: 1rem 0 1rem 0;
   text-align: center;
-  background-color: #2a652c;
+  background-color: #c8bfc7;
   font-family: "Fira Sans", sans-serif;
   font-size: 105%;
 }
@@ -330,7 +330,7 @@ a:active {
 
 #homepage_bottom {
   background-color: black;
-  background-image: linear-gradient(to bottom, #2a652c, black);
+  background-image: linear-gradient(to bottom, #c8bfc7, goldenrod);
 }
 #homepage_bottom #video {
   padding: 0.5rem 0 0.5rem 0;
