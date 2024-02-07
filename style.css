@@ -311,28 +311,78 @@ a:active {
   text-decoration: underline;
 }
 
+/* Currently very indecisive about colors */
+.about {
+  /* border: 1px solid #ca054d; rose red */
+  /* border: 1px solid #776885; light purple */
+  border: 1px solid #93748a; /* Mountbatten pink */
+  /* border: 1px solid #ef767a; */ /* Light coral */
+  border: 1px solid #76877d; /* Battleship gray */
+  border: 1px solid #708b75; /* Roseda green */
+}
+
 .musician_bio {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
+  display: flow-root;
 }
-
-.musician_bio.right {
-  justify-content: flex-end;
+.musician_bio .musician_headshot {
+  float: left;
+  width: 50%;
+  margin: 0 1rem 1rem 0;
 }
-
-.musician_headshot {
-  width: 35%;
-}
-.musician_headshot img {
+.musician_bio .musician_headshot img {
   width: 100%;
   height: auto;
   min-width: 100px;
+  border-radius: 25px;
+  border: 5px solid goldenrod;
+}
+.musician_bio p {
+  text-align: left;
+  font-family: "Fira Sans", sans-serif;
+}
+.musician_bio a {
+  color: rgb(255, 240, 171);
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+  text-decoration-style: dotted;
+}
+.musician_bio a:hover, .musician_bio a:focus-visible {
+  font-style: italic;
 }
 
+.musician_bio.right .musician_headshot {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+.musician_bio.right p {
+  text-align: right;
+}
+
+/* || Full Screen Settings || */
+/* .musician_bio {
+    border: 1px solid red;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    .musician_headshot {
+        width: 35%;
+
+        img {
+            width: 100%;
+            height: auto;
+            min-width: 100px;
+        }
+    }
+}
+
+.musician_bio.right {
+    justify-content: flex-end;
+} */
 .h2_music {
   background-color: #333;
 }
