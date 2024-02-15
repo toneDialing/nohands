@@ -334,6 +334,12 @@ a:active {
     border: 1px solid black;
 }
 
+//This creates no visible changes
+blockquote {
+    background-color: goldenrod;
+    border: 1px solid red;
+}
+
 #blurb {
     background-color: black;
     background-image: linear-gradient(to bottom, goldenrod, #c8bfc7);
