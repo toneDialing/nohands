@@ -334,6 +334,15 @@ a:active {
     border: 1px solid black;
 }
 
+//This does create visible changes
+.blockquote_container {
+    background-color: goldenrod;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //This creates no visible changes
 blockquote {
     background-color: goldenrod;
