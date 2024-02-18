@@ -306,7 +306,7 @@ a:active {
   border: 1px solid black;
 }
 
-.blockquote_container {
+#blockquote_container {
   background-color: goldenrod;
   border: 1px solid red;
   display: flex;
