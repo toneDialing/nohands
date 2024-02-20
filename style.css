@@ -266,9 +266,10 @@ a:active {
 #slogan_container {
   /* border: 1px solid purple; */
   height: 50vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-image: url("./SVGs/gold_wave3.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -281,7 +282,7 @@ a:active {
   padding-top: 1rem;
 }
 #slogan_container #off_the_curb_spotify {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +290,7 @@ a:active {
 }
 #slogan_container #off_the_curb_spotify iframe {
   border-radius: 12px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 #slogan2_container {
@@ -320,16 +321,19 @@ blockquote {
 }
 
 #blurb {
-  background-color: black;
-  background-image: linear-gradient(to bottom, goldenrod, #c8bfc7);
+  background-color: goldenrod;
+  background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
   font-family: "Fira Sans", sans-serif;
 }
 
 #new_sonic_world {
   padding: 1rem 0 1rem 0;
   text-align: center;
-  color: #374038;
-  background-color: #c8bfc7;
+  color: goldenrod;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px #333;
+  /* color: #374038; //Exact opposite of background color
+  background-color: #c8bfc7; */
   font-family: "Fira Sans", sans-serif;
   font-size: 105%;
 }
