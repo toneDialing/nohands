@@ -315,9 +315,13 @@ a:active {
   color: white;
   background-color: goldenrod;
   font-family: "Fira Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
 }
 #slogan2_container h3 {
-  padding-bottom: 1rem;
+  padding: 1rem;
   color: #d7f9f1;
 }
 

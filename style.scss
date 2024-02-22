@@ -342,9 +342,13 @@ a:active {
     color: white;
     background-color: goldenrod;
     font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
 
     h3 {
-        padding-bottom: 1rem;
+        padding: 1rem;
         color: $mint_green;
     }
 }
