@@ -375,6 +375,7 @@ blockquote {
 #homepage_bottom #video {
   padding: 0.5rem 0 0.5rem 0;
   border: none;
+  height: 50vh;
 }
 #homepage_bottom #video iframe {
   border: none;
