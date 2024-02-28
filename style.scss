@@ -75,7 +75,21 @@ main.stick_on_scroll_with_page_title {
     padding-top: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
 }
 
-h2, h3 {
+h2 {
+    max-width: 90vw;
+    margin: auto;
+    font-size: clamp(1.5rem, 5vh, 2.5rem);
+    text-align: center;
+    border: 1px solid blue;
+
+    #on_deck_slogan {
+        font-size: min(2.5rem, 5vw); //maybe clamp this like h2 above
+        /* display: inline-block;
+        max-width: 100%; */
+    }
+}
+
+h3 {
     text-align: center;
 }
 
