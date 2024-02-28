@@ -80,6 +80,7 @@ h2, h3 {
 }
 
 p {
+    font-size: clamp(1rem, 3vh, 2rem);
     line-height: 1.5;
     text-align: center;
 }
@@ -384,7 +385,9 @@ a:active {
     background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
 
     #blurb {
-        padding: 1rem;
+        width: clamp(350px, 80vw, 1200px);
+        margin: auto;
+        padding: 1rem 1rem 2rem; /* left/right padding: clamp(2rem, 20vw, 3rem) */
         font-family: 'Fira Sans', sans-serif;
     }
     
