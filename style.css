@@ -285,7 +285,7 @@ a:active {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 10px #333;
+  /* box-shadow: 0 0 10px #333; */
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
 }
@@ -297,7 +297,11 @@ a:active {
   }
 }
 #svg_container h2 {
-  padding-top: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+#svg_container h3 {
+  padding: 1rem;
+  color: #d7f9f1;
 }
 #svg_container #spotify_container_outer {
   width: clamp(350px, 75vw, max(800px, 50vw));
@@ -312,7 +316,6 @@ a:active {
   margin: auto;
   padding: 0% 0% 56.25%;
   overflow: hidden;
-  border: 1px solid green;
 }
 #svg_container #spotify_container_outer #spotify_container_inner iframe {
   border-radius: 12px;
@@ -322,43 +325,42 @@ a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 }
 
-#slogan2_container {
-  color: white;
-  background-color: goldenrod;
-  font-family: "Fira Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid blue;
-}
-#slogan2_container h3 {
-  padding: 1rem;
-  color: #d7f9f1;
-}
+/* #slogan2_container {
+    color: white;
+    background-color: goldenrod;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
 
+    h3 {
+        padding: 1rem;
+        color: $mint_green;
+    }
+} */
 .hr_homepage {
   border: 1px solid black;
 }
 
-#instagram_container {
+#fade_container {
   background-color: goldenrod;
-  border: 1px solid red;
+  background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
+}
+#fade_container #blurb {
+  padding: 1rem;
+  font-family: "Fira Sans", sans-serif;
+}
+#fade_container #instagram_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#blurb {
-  background-color: goldenrod;
-  background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
-  font-family: "Fira Sans", sans-serif;
-}
-
 #new_sonic_world {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   text-align: center;
   color: goldenrod;
   background-color: #2a2a2a;
@@ -367,6 +369,14 @@ a:active {
   background-color: #c8bfc7; */
   font-family: "Fira Sans", sans-serif;
   font-size: 105%;
+}
+#new_sonic_world #paragraph_links {
+  color: white;
+  font-size: 100%;
+}
+#new_sonic_world #paragraph_links a {
+  color: #d7f9f1;
+  text-decoration: underline;
 }
 
 #ep img {
@@ -403,13 +413,6 @@ a:active {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-#paragraph_links {
-  font-family: "Fira Sans", sans-serif;
-}
-#paragraph_links a {
-  text-decoration: underline;
 }
 
 /* Currently very indecisive about colors */
