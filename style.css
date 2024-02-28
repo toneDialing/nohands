@@ -343,17 +343,12 @@ a:active {
   border: 1px solid black;
 }
 
-#blockquote_container {
+#instagram_container {
   background-color: goldenrod;
   border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-blockquote {
-  background-color: goldenrod;
-  border: 1px solid red;
 }
 
 #blurb {
