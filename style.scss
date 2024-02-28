@@ -324,16 +324,32 @@ a:active {
     }
 
     //iframe container
-    #off_the_curb_spotify {
-        border: 1px solid green;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0 2rem 0;
+    #spotify_container_outer {
+        width: clamp(350px, 75vw, max(800px, 50vw));
+        margin: auto;
+        overflow: hidden;
+
+        #spotify_container_inner {
+            position: relative;
+            display: block;
+            width: 100%; //slightly wider than YouTube embed
+            height: 0;
+            margin: auto;
+            padding: 0% 0% 56.25%;
+            overflow: hidden;
+            border: 1px solid green;
         
-        iframe {
-            border-radius: 12px;
-            border: 1px solid red;
+            //Spotify's embedded player automatically adjusts its visible size within the container it's given
+            //Seems like it won't expand to fill iframe container unless it's at least 628px wide
+            //With a height of 352px, this is just about 16:9 aspect ratio
+            iframe {
+                border-radius: 12px;
+                position: absolute;
+                top: 0; bottom: 0; left: 0;
+                width: 100%;
+                height: 100%;
+                border: 1px solid red;
+            }
         }
     }
 }
@@ -409,6 +425,7 @@ blockquote {
     #youtube_container_outer {
         width: clamp(350px, 75vw, max(800px, 50vw));
         margin: auto;
+        overflow: hidden;
 
         #youtube_container_inner {
             position: relative;
