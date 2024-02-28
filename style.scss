@@ -298,7 +298,7 @@ a:active {
 // ** SVG Image Container ** //
     //The thin black SVG border line seems to appear only when using "responsive" dimensions
     //in Chrome's inspect tool, so I assume it's not actually an issue.
-#slogan_container {
+#svg_container {
     /* border: 1px solid purple; */
     height: 50vh;
     min-height: 400px;

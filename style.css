@@ -274,7 +274,7 @@ a:active {
   }
 }
 
-#slogan_container {
+#svg_container {
   /* border: 1px solid purple; */
   height: 50vh;
   min-height: 400px;
@@ -290,21 +290,21 @@ a:active {
   color: goldenrod;
 }
 @media screen and (orientation: landscape) {
-  #slogan_container {
+  #svg_container {
     background-position: bottom;
     aspect-ratio: 9/6;
     height: 100vh;
   }
 }
-#slogan_container h2 {
+#svg_container h2 {
   padding-top: 1rem;
 }
-#slogan_container #spotify_container_outer {
+#svg_container #spotify_container_outer {
   width: clamp(350px, 75vw, max(800px, 50vw));
   margin: auto;
   overflow: hidden;
 }
-#slogan_container #spotify_container_outer #spotify_container_inner {
+#svg_container #spotify_container_outer #spotify_container_inner {
   position: relative;
   display: block;
   width: 100%;
@@ -314,7 +314,7 @@ a:active {
   overflow: hidden;
   border: 1px solid green;
 }
-#slogan_container #spotify_container_outer #spotify_container_inner iframe {
+#svg_container #spotify_container_outer #spotify_container_inner iframe {
   border-radius: 12px;
   position: absolute;
   top: 0;
