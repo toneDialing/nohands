@@ -88,6 +88,7 @@ a:any-link {
     color: white;
 }
 
+/* NOT USED */
 .border {
     aspect-ratio: 900/100;
     width: 100%;
@@ -107,6 +108,7 @@ hr {
 //TODO: Figure out why the thin border appears around SVG image
 //Note: It disappears sometimes when zooming in or out.
 //Removing from CSS and placing directly in HTML didn't work
+/* NOT USED */
 .blue_wave {
     background-image: url('./SVGs/test.svg');
     z-index: 100;

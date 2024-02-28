@@ -73,6 +73,7 @@ a:any-link {
   color: white;
 }
 
+/* NOT USED */
 .border {
   aspect-ratio: 900/100;
   width: 100%;
@@ -88,6 +89,7 @@ hr {
   background-color: #8800cc;
 }
 
+/* NOT USED */
 .blue_wave {
   background-image: url("./SVGs/test.svg");
   z-index: 100;
