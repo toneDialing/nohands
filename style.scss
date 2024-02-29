@@ -78,18 +78,18 @@ main.stick_on_scroll_with_page_title {
 h2 {
     max-width: 90vw;
     margin: auto;
-    font-size: clamp(1.5rem, 5vh, 2.5rem);
+    font-size: clamp(1.5rem, 6vw, 4.5rem);
     text-align: center;
-    border: 1px solid blue;
 
     #on_deck_slogan {
-        font-size: min(2.5rem, 5vw); //maybe clamp this like h2 above
+        font-size: clamp(1rem, 5vw, 4rem); /* min(2.5rem, 5vw); */ //maybe clamp this like h2 above
         /* display: inline-block;
         max-width: 100%; */
     }
 }
 
 h3 {
+    font-size: clamp(1rem, 4vw, 2rem);
     text-align: center;
 }
 
