@@ -18,12 +18,12 @@ input, button, textarea {
 }
 
 :root {
-  --STICKY_HEADER_HEIGHT: 80px;
-  --PAGE_TITLE_HEIGHT: 40px;
+  --STICKY_HEADER_HEIGHT: 15vh; /* 80px; */
+  --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
 }
 @media screen and (min-width: 481px) {
   :root {
-    --STICKY_HEADER_HEIGHT: 45px;
+    --STICKY_HEADER_HEIGHT: 15vh; /* 45px; */
   }
 }
 
@@ -58,6 +58,18 @@ main.stick_on_scroll {
 
 main.stick_on_scroll_with_page_title {
   padding-top: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
+}
+
+h1 {
+  max-width: 80vw;
+  margin: auto;
+  font-size: 10vw; /* clamp(2rem, 7vw, 5rem) */
+  text-align: center;
+}
+@media screen and (orientation: landscape) {
+  h1 {
+    font-size: 8vw;
+  }
 }
 
 h2 {
@@ -164,11 +176,10 @@ hr {
   top: var(--STICKY_HEADER_HEIGHT);
 }
 
-#no_hands_title::after {
-  content: "\a";
-  white-space: pre-line;
-}
-
+/* #no_hands_title::after {
+    content: '\a';
+    white-space: pre-line;
+} */
 #menu_icon_container {
   position: absolute;
   top: 0;
