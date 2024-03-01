@@ -596,10 +596,10 @@ a:active {
 }
 
 @media screen and (min-width: 481px) {
-    #no_hands_title::after {
+    /* #no_hands_title::after {
         content: '';
         white-space: normal;
-    }
+    } */
 
     #nav_menu_ul {
         list-style-type: none;
