@@ -18,12 +18,15 @@ input, button, textarea {
 }
 
 :root {
-  --STICKY_HEADER_HEIGHT: 15vh; /* 80px; */
+  --STICKY_HEADER_HEIGHT: calc(22vw);
   --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
+  /* @media screen and (min-width: 481px) {
+      --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
+  } */
 }
-@media screen and (min-width: 481px) {
+@media screen and (orientation: landscape) {
   :root {
-    --STICKY_HEADER_HEIGHT: 15vh; /* 45px; */
+    --STICKY_HEADER_HEIGHT: calc(7vw);
   }
 }
 
@@ -68,7 +71,7 @@ h1 {
 }
 @media screen and (orientation: landscape) {
   h1 {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 }
 
@@ -158,6 +161,7 @@ hr {
   padding: 10px 0;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
+  /* border: 1px solid green; */
 }
 
 #sticky_page_title {
