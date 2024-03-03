@@ -24,6 +24,8 @@ input, button, textarea {
 // Variables //
 $menu_container_height: 2.5rem;
 $menu_container_width: 5rem;
+$menu_bar_width: calc(1.75rem * 1.4); //maybe just use 2-3 discrete sizes, dependent upon viewport
+$menu_bar_height: calc(0.3rem * 1.4);
 $faded_yellow: rgb(255, 240, 171);
 $roseda_green: #708b75;
 $mint_green: #d7f9f1;
@@ -215,6 +217,7 @@ hr {
     height: $menu_container_height;
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
+    border: 1px solid blue;
 }
 
 #menu_icon {
@@ -226,15 +229,15 @@ hr {
 }
 
 #bar1, #bar2, #bar3 {
-    width: 1.75rem;
-    height: 0.3rem;
+    width: $menu_bar_width;
+    height: $menu_bar_height;
     background-color: goldenrod;
-    margin: 0.2rem;
+    margin: calc(0.2rem * 1.4);
     transition: 0.4s;
 }
 
 .menu_clicked #bar1 {
-    transform: translate(0, 0.5rem) rotate(-45deg);
+    transform: translate(0, calc(0.5rem * 1.4)) rotate(-45deg);
     background-color: gold;
 }
 
@@ -243,7 +246,7 @@ hr {
 }
 
 .menu_clicked #bar3 {
-    transform: translate(0, -0.5rem) rotate(45deg);
+    transform: translate(0, calc(-0.5rem * 1.4)) rotate(45deg);
     background-color: gold;
 }
 
