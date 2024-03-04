@@ -18,15 +18,47 @@ input, button, textarea {
 }
 
 :root {
-  --STICKY_HEADER_HEIGHT: calc(22vw);
+  --STICKY_HEADER_HEIGHT: 22vw;
   --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
+  --menu-container-height: 2.5rem;
+  --menu-container-width: 5rem;
+  --menu-icon-top-position: 0.6rem;
+  --menu-icon-right-position: 0.4rem;
+  --menu-bar-width: 1.75rem;
+  --menu-bar-height: 0.3rem;
+  --menu-bar-margin: 0.2rem;
+  --menu-bar-translation: 0.5rem;
   /* @media screen and (min-width: 481px) {
       --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
   } */
 }
+@media screen and (min-width: 481px) {
+  :root {
+    --menu-container-height: calc(2.5rem * 1.2);
+    --menu-container-width: calc(5rem * 1.2);
+    --menu-icon-top-position: calc(0.6rem * 1.2);
+    --menu-icon-right-position: calc(0.4rem * 1.2);
+    --menu-bar-width: calc(1.75rem * 1.2);
+    --menu-bar-height: calc(0.3rem * 1.2);
+    --menu-bar-margin: calc(0.2rem * 1.2);
+    --menu-bar-translation: calc(0.5rem * 1.2);
+  }
+}
+@media screen and (min-width: 1151px) {
+  :root {
+    --menu-container-height: calc(2.5rem * 1.5);
+    --menu-container-width: calc(5rem * 1.5);
+    --menu-icon-top-position: calc(0.6rem * 1.5);
+    --menu-icon-right-position: calc(0.4rem * 1.5);
+    --menu-bar-width: calc(1.75rem * 1.5);
+    --menu-bar-height: calc(0.3rem * 1.5);
+    --menu-bar-margin: calc(0.2rem * 1.5);
+    --menu-bar-translation: calc(0.5rem * 1.5);
+  }
+}
 @media screen and (orientation: landscape) {
   :root {
-    --STICKY_HEADER_HEIGHT: calc(7vw);
+    --STICKY_HEADER_HEIGHT: 7vw;
   }
 }
 
@@ -188,31 +220,31 @@ hr {
   position: absolute;
   top: 0;
   right: 0;
-  width: 5rem;
-  height: 2.5rem;
+  width: var(--menu-container-width);
+  height: var(--menu-container-height);
   background-color: rgba(0, 0, 0, 0);
   z-index: 2;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 #menu_icon {
   position: absolute;
-  top: 0.6rem;
-  right: 0.4rem;
+  top: var(--menu-icon-top-position);
+  right: var(--menu-icon-right-position);
   background-color: rgba(0, 0, 0, 0);
   z-index: 2;
 }
 
 #bar1, #bar2, #bar3 {
-  width: 2.45rem;
-  height: 0.42rem;
+  width: var(--menu-bar-width);
+  height: var(--menu-bar-height);
   background-color: goldenrod;
-  margin: 0.28rem;
+  margin: var(--menu-bar-margin);
   transition: 0.4s;
 }
 
 .menu_clicked #bar1 {
-  transform: translate(0, 0.7rem) rotate(-45deg);
+  transform: translate(0, var(--menu-bar-translation)) rotate(-45deg);
   background-color: gold;
 }
 
@@ -221,13 +253,13 @@ hr {
 }
 
 .menu_clicked #bar3 {
-  transform: translate(0, -0.7rem) rotate(45deg);
+  transform: translate(0, -var(--menu-bar-translation)) rotate(45deg);
   background-color: gold;
 }
 
 #nav_display_container {
   position: absolute;
-  top: 2.5rem;
+  top: --var(--menu-container-height);
   right: 0;
   height: 7rem;
   width: 5rem;
