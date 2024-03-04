@@ -244,7 +244,7 @@ hr {
     height: var(--menu-container-height);
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 #menu_icon {
@@ -273,13 +273,13 @@ hr {
 }
 
 .menu_clicked #bar3 {
-    transform: translate(0, -var(--menu-bar-translation)) rotate(45deg);
+    transform: translate(0, calc(var(--menu-bar-translation) * -1)) rotate(45deg);
     background-color: gold;
 }
 
 #nav_display_container {
     position: absolute;
-    top: --var(--menu-container-height);
+    top: var(--menu-container-height);
     right: 0;
     height: 7rem;
     width: 5rem;
