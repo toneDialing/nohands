@@ -39,6 +39,10 @@ $forest_green: #2a652c;
     --menu-bar-height: 0.3rem;
     --menu-bar-margin: 0.2rem;
     --menu-bar-translation: 0.5rem;
+    --nav-display-height: 7rem;
+    --nav-display-width: 5rem;
+    --nav-font-size: 1rem;
+    --nav-dropdown-distance: 12rem; //This value doesn't change regardless of viewport size
 
     @media screen and (min-width: 481px) {
         --menu-container-height: calc(2.5rem * 1.2);
@@ -49,6 +53,9 @@ $forest_green: #2a652c;
         --menu-bar-height: calc(0.3rem * 1.2);
         --menu-bar-margin: calc(0.2rem * 1.2);
         --menu-bar-translation: calc(0.5rem * 1.2);
+        --nav-display-height: calc(7rem * 1.2);
+        --nav-display-width: calc(5rem * 1.2);
+        --nav-font-size: calc(1rem * 1.2);
     }
 
     @media screen and (min-width: 1151px) {
@@ -60,6 +67,9 @@ $forest_green: #2a652c;
         --menu-bar-height: calc(0.3rem * 1.5);
         --menu-bar-margin: calc(0.2rem * 1.5);
         --menu-bar-translation: calc(0.5rem * 1.5);
+        --nav-display-height: calc(7rem * 1.5);
+        --nav-display-width: calc(5rem * 1.5);
+        --nav-font-size: calc(1rem * 1.5);
     }
 
     @media screen and (orientation: landscape) {
@@ -281,8 +291,8 @@ hr {
     position: absolute;
     top: var(--menu-container-height);
     right: 0;
-    height: 7rem;
-    width: 5rem;
+    height: var(--nav-display-height);
+    width: var(--nav-display-width);
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
 }
@@ -292,15 +302,16 @@ hr {
     padding: 0.1rem 0;
     background-color: gray;
     position: absolute;
-    top: -10rem;
+    top: calc(var(--nav-dropdown-distance) * -1);
     right: 0;
+    width: var(--nav-display-width); //Ensures drop-down menu fills out width of container, but height depends solely on amount of text since it's not specified
     list-style-type: none;
     z-index: 1;
     transition: 0.2s;
 }
 
 .menu_clicked#nav_container {
-    transform: translate(0, 10rem);
+    transform: translate(0, var(--nav-dropdown-distance));
 }
 
 #nav_menu_ul {
@@ -310,6 +321,7 @@ hr {
     flex-direction: column;
     justify-content: space-evenly;
     font-family: 'Karla', sans-serif;
+    font-size: var(--nav-font-size);
 }
 
 #nav_menu_ul a:hover {
