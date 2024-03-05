@@ -40,7 +40,7 @@ $forest_green: #2a652c;
     --menu-bar-margin: 0.2rem;
     --menu-bar-translation: 0.5rem;
     --nav-display-height: 7rem;
-    --nav-display-width: 5rem;
+    --nav-display-width: 4rem;
     --nav-font-size: 1rem;
     --nav-dropdown-distance: 12rem; //This value doesn't change regardless of viewport size
 
@@ -54,7 +54,7 @@ $forest_green: #2a652c;
         --menu-bar-margin: calc(0.2rem * 1.2);
         --menu-bar-translation: calc(0.5rem * 1.2);
         --nav-display-height: calc(7rem * 1.2);
-        --nav-display-width: calc(5rem * 1.2);
+        --nav-display-width: calc(4rem * 1.2);
         --nav-font-size: calc(1rem * 1.2);
     }
 
@@ -68,7 +68,7 @@ $forest_green: #2a652c;
         --menu-bar-margin: calc(0.2rem * 1.5);
         --menu-bar-translation: calc(0.5rem * 1.5);
         --nav-display-height: calc(7rem * 1.5);
-        --nav-display-width: calc(5rem * 1.5);
+        --nav-display-width: calc(4rem * 1.5);
         --nav-font-size: calc(1rem * 1.5);
     }
 
@@ -225,6 +225,7 @@ hr {
     /* border: 1px solid green; */
 }
 
+//Title headings for non-homepage pages
 #sticky_page_title {
     color: black;
     background-color: goldenrod;
@@ -254,7 +255,6 @@ hr {
     height: var(--menu-container-height);
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
-    border: 1px solid blue;
 }
 
 #menu_icon {
@@ -300,11 +300,12 @@ hr {
 #nav_container {
     display: block;
     padding: 0.1rem 0;
-    background-color: gray;
+    background-color: rgb(42, 42, 42);
     position: absolute;
     top: calc(var(--nav-dropdown-distance) * -1);
     right: 0;
     width: var(--nav-display-width); //Ensures drop-down menu fills out width of container, but height depends solely on amount of text since it's not specified
+    border-radius: 0.5rem;
     list-style-type: none;
     z-index: 1;
     transition: 0.2s;
@@ -316,12 +317,16 @@ hr {
 
 #nav_menu_ul {
     list-style-type: none;
-    padding: 0 1rem 0 0;
+    padding: 0 1rem 0 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: var(--nav-font-size);
+    
+    a {
+        color: $mint_green;
+    }
 }
 
 #nav_menu_ul a:hover {
