@@ -25,6 +25,7 @@ input, button, textarea {
 :root {
   --STICKY_HEADER_HEIGHT: 22vw;
   --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
+  --sticky-header-text-padding: 7px;
   --menu-container-height: 2.5rem;
   --menu-container-width: 5rem;
   --menu-icon-top-position: 0.6rem;
@@ -74,6 +75,7 @@ input, button, textarea {
 @media screen and (orientation: landscape) {
   :root {
     --STICKY_HEADER_HEIGHT: 7vw;
+    --sticky-header-text-padding: 3px;
   }
 }
 
@@ -205,11 +207,12 @@ hr {
 }
 
 #sticky_header_text {
-  height: var(--STICKY_HEADER_HEIGHT);
-  padding: 10px 0;
+  /* height: var(--STICKY_HEADER_HEIGHT); */
+  padding: var(--sticky-header-text-padding) 0;
   text-align: center;
   font-family: "Prompt", sans-serif;
   color: #EEE;
+  /* border: 1px solid green; */
 }
 
 #sticky_page_title {

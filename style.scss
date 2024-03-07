@@ -37,6 +37,7 @@ $forest_green: #2a652c;
 :root { // TODO: Convert these into Sass-style variables
     --STICKY_HEADER_HEIGHT: 22vw;    //15vh; /* 80px; */
     --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
+    --sticky-header-text-padding: 7px;
     //menu_variables
     --menu-container-height: 2.5rem;
     --menu-container-width: 5rem;
@@ -81,6 +82,7 @@ $forest_green: #2a652c;
 
     @media screen and (orientation: landscape) {
         --STICKY_HEADER_HEIGHT: 7vw;
+        --sticky-header-text-padding: 3px;
     }
 
     /* @media screen and (min-width: 481px) {
@@ -227,11 +229,12 @@ hr {
 
 //Anta, Dosis, Prompt, Varela Round, Play
 #sticky_header_text {
-    height: var(--STICKY_HEADER_HEIGHT);
-    padding: 10px 0;
+    /* height: var(--STICKY_HEADER_HEIGHT); */
+    padding: var(--sticky-header-text-padding) 0;
     text-align: center;
     font-family: 'Prompt', sans-serif;
     color: #EEE;
+    /* border: 1px solid green; */
 }
 
 //Title headings for non-homepage pages
