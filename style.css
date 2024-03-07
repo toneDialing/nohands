@@ -37,10 +37,17 @@ input, button, textarea {
   --nav-display-height: 7rem;
   --nav-display-width: 4rem;
   --nav-font-size: 1rem;
-  --nav-dropdown-distance: 12rem;
+  --nav-dropdown-distance: 15rem;
   /* @media screen and (min-width: 481px) {
       --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
   } */
+}
+@media screen and (min-width: 375px) {
+  :root {
+    --nav-display-height: calc(7rem * 1.2);
+    --nav-display-width: calc(4rem * 1.2);
+    --nav-font-size: calc(1rem * 1.2);
+  }
 }
 @media screen and (min-width: 481px) {
   :root {
@@ -52,9 +59,9 @@ input, button, textarea {
     --menu-bar-height: calc(0.3rem * 1.2);
     --menu-bar-margin: calc(0.2rem * 1.2);
     --menu-bar-translation: calc(0.5rem * 1.2);
-    --nav-display-height: calc(7rem * 1.2);
-    --nav-display-width: calc(4rem * 1.2);
-    --nav-font-size: calc(1rem * 1.2);
+    --nav-display-height: calc(7rem * 1.5);
+    --nav-display-width: calc(4rem * 1.5);
+    --nav-font-size: calc(1rem * 1.5);
   }
 }
 @media screen and (min-width: 1151px) {
@@ -67,9 +74,9 @@ input, button, textarea {
     --menu-bar-height: calc(0.3rem * 1.5);
     --menu-bar-margin: calc(0.2rem * 1.5);
     --menu-bar-translation: calc(0.5rem * 1.5);
-    --nav-display-height: calc(7rem * 1.5);
-    --nav-display-width: calc(4rem * 1.5);
-    --nav-font-size: calc(1rem * 1.5);
+    --nav-display-height: calc(7rem * 2);
+    --nav-display-width: calc(4rem * 2);
+    --nav-font-size: calc(1rem * 2);
   }
 }
 @media screen and (orientation: landscape) {
@@ -295,6 +302,7 @@ hr {
   width: var(--nav-display-width);
   border-radius: 0.5rem;
   list-style-type: none;
+  line-height: 1.3;
   z-index: 1;
   transition: 0.2s;
 }
