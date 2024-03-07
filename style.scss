@@ -36,7 +36,7 @@ $forest_green: #2a652c;
 
 :root { // TODO: Convert these into Sass-style variables
     --STICKY_HEADER_HEIGHT: 22vw;    //15vh; /* 80px; */
-    --PAGE_TITLE_HEIGHT: 7vh; /* 40px; */
+    --PAGE_TITLE_HEIGHT: calc(16 / 717)vw; /* 40px; */ //4vh 400/717
     --sticky-header-text-padding: 7px;
     //menu_variables
     --menu-container-height: 2.5rem;
@@ -89,6 +89,7 @@ $forest_green: #2a652c;
     @media screen and (orientation: landscape) {
         --STICKY_HEADER_HEIGHT: 7vw;
         --sticky-header-text-padding: 3px;
+        --PAGE_TITLE_HEIGHT: calc(1vw * ((4.2*717)/900)); // 5vh 900/717  42/717vw
     }
 
     /* @media screen and (min-width: 481px) {
@@ -253,6 +254,10 @@ hr {
     height: var(--PAGE_TITLE_HEIGHT);
     text-align: center;
     font-family: 'Karla', sans-serif;
+
+    h2 {
+        border: 1px solid blue;
+    }
 }
 
 #sticky_page_title.stick_on_scroll {
