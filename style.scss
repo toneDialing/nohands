@@ -134,6 +134,10 @@ main.stick_on_scroll_with_page_title {
     padding-top: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
 }
 
+main.contact {
+    background-color: goldenrod;
+}
+
 h1 {
     max-width: 80vw;
     margin: auto;
