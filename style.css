@@ -234,7 +234,7 @@ hr {
   font-family: "Karla", sans-serif;
 }
 #sticky_page_title h2 {
-  border: 1px solid blue;
+  font-size: clamp(1.5rem, 3vw, 4.5rem);
 }
 
 #sticky_page_title.stick_on_scroll {

@@ -256,7 +256,7 @@ hr {
     font-family: 'Karla', sans-serif;
 
     h2 {
-        border: 1px solid blue;
+        font-size: clamp(1.5rem, 3vw, 4.5rem);
     }
 }
 
