@@ -242,6 +242,10 @@ hr {
     font-family: 'Prompt', sans-serif;
     color: #EEE;
     /* border: 1px solid green; */
+
+    a:hover, a:focus-visible, a:active {
+        text-decoration: none;
+    }
 }
 
 //Title headings for non-homepage pages

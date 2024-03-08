@@ -222,6 +222,9 @@ hr {
   color: #EEE;
   /* border: 1px solid green; */
 }
+#sticky_header_text a:hover, #sticky_header_text a:focus-visible, #sticky_header_text a:active {
+  text-decoration: none;
+}
 
 #sticky_page_title {
   color: black;
