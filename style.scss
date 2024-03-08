@@ -258,6 +258,7 @@ hr {
     height: var(--PAGE_TITLE_HEIGHT);
     text-align: center;
     font-family: 'Karla', sans-serif;
+    z-index: 1;
 
     h2 {
         font-size: clamp(1.5rem, 3vw, 4.5rem);
