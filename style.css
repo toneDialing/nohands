@@ -478,6 +478,9 @@ a:active {
   color: #d7f9f1;
   text-decoration: underline;
 }
+#new_sonic_world #paragraph_links a:active {
+  font-style: italic;
+}
 
 #ep img {
   display: block;

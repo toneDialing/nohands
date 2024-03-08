@@ -516,6 +516,10 @@ a:active {
             color: $mint_green;
             text-decoration: underline;
         }
+
+        a:active {
+            font-style: italic;
+        }
     }
 }
 
