@@ -25,6 +25,7 @@ input, button, textarea {
 :root {
   --STICKY_HEADER_HEIGHT: 22vw;
   --PAGE_TITLE_HEIGHT: calc(16 / 717)vw; /* 40px; */
+  --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
   --sticky-header-text-padding: 7px;
   --menu-container-height: 2.5rem;
   --menu-container-width: 5rem;
@@ -84,6 +85,7 @@ input, button, textarea {
     --STICKY_HEADER_HEIGHT: 7vw;
     --sticky-header-text-padding: 3px;
     --PAGE_TITLE_HEIGHT: calc(1vw * ((4.2*717)/900));
+    --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
   }
 }
 
@@ -117,7 +119,7 @@ main.stick_on_scroll {
 }
 
 main.stick_on_scroll_with_page_title {
-  padding-top: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
+  padding-top: var(--TOTAL_HEADER_HEIGHT);
 }
 
 main.contact {
