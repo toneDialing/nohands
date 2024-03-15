@@ -174,19 +174,33 @@ p {
     text-align: center;
 
     &.contact {
-        color: blue;
+        color: $mint_green;
     }
 }
 
 ul {
     list-style-type: disc;
     padding: 5rem;
+
+    &.sub_list {
+        list-style-type: square;
+        padding: 0;
+        margin-left: clamp(2rem, 5vw, 4rem);
+
+        li {
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
+        }
+    }
 }
 
 li {
     font-size: clamp(0.9rem, 3vw, 1.5rem);
     line-height: 1.5;
     text-align: left;
+
+    &.contact {
+        color: $mint_green;
+    }
 }
 
 a:any-link {
