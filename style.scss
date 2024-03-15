@@ -259,7 +259,7 @@ hr {
     height: var(--STICKY_HEADER_HEIGHT);
     /* position: sticky; */
     /* top: 0; */
-    z-index: 2;
+    z-index: 2; //This has to have higher z-index than page title in order for its children (i.e. drop-down menu) to appear on top of page title
 }
 
 #sticky_header_container.stick_on_scroll {
