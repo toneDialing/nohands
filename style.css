@@ -162,6 +162,11 @@ p {
 p.contact {
   color: #d7f9f1;
 }
+p#contact_bottom_text {
+  background-color: #708b75;
+  margin: 0 20vw;
+  border-radius: 1rem;
+}
 
 ul {
   list-style-type: disc;

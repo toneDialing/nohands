@@ -176,6 +176,12 @@ p {
     &.contact {
         color: $mint_green;
     }
+
+    &#contact_bottom_text {
+        background-color: $roseda_green;
+        margin: 0 20vw;
+        border-radius: 1rem;
+    }
 }
 
 ul {
