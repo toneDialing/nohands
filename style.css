@@ -37,14 +37,14 @@ input, button, textarea {
   --nav-display-height: 7rem;
   --nav-display-width: 4rem;
   --nav-font-size: 1rem;
-  --nav-dropdown-distance: 15rem;
+  --nav-dropdown-distance: 20rem;
   /* @media screen and (min-width: 481px) {
       --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
   } */
 }
 @media screen and (min-width: 375px) {
   :root {
-    --nav-display-height: calc(7rem * 1.2);
+    --nav-display-height: calc(8rem * 1.2);
     --nav-display-width: calc(4rem * 1.2);
     --nav-font-size: calc(1rem * 1.2);
   }
@@ -59,7 +59,7 @@ input, button, textarea {
     --menu-bar-height: calc(0.3rem * 1.2);
     --menu-bar-margin: calc(0.2rem * 1.2);
     --menu-bar-translation: calc(0.5rem * 1.2);
-    --nav-display-height: calc(7rem * 1.5);
+    --nav-display-height: calc(8rem * 1.5);
     --nav-display-width: calc(4rem * 1.5);
     --nav-font-size: calc(1rem * 1.5);
   }
@@ -74,7 +74,7 @@ input, button, textarea {
     --menu-bar-height: calc(0.3rem * 1.5);
     --menu-bar-margin: calc(0.2rem * 1.5);
     --menu-bar-translation: calc(0.5rem * 1.5);
-    --nav-display-height: calc(7rem * 2);
+    --nav-display-height: calc(8rem * 2);
     --nav-display-width: calc(4rem * 2);
     --nav-font-size: calc(1rem * 2);
   }
@@ -235,7 +235,7 @@ hr {
   height: var(--STICKY_HEADER_HEIGHT);
   /* position: sticky; */
   /* top: 0; */
-  z-index: 1;
+  z-index: 2;
 }
 
 #sticky_header_container.stick_on_scroll {
@@ -336,7 +336,7 @@ hr {
   border-radius: 0.5rem;
   list-style-type: none;
   line-height: 1.3;
-  z-index: 1;
+  z-index: 2;
   transition: 0.2s;
 }
 
