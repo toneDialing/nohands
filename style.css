@@ -24,7 +24,7 @@ input, button, textarea {
 
 :root {
   --STICKY_HEADER_HEIGHT: 22vw;
-  --PAGE_TITLE_HEIGHT: calc(16 / 717)vw; /* 40px; */
+  --PAGE_TITLE_HEIGHT: 6vw; /* 40px; */
   --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
   --sticky-header-text-padding: 7px;
   --menu-container-height: 2.5rem;

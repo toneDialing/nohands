@@ -36,7 +36,7 @@ $forest_green: #2a652c;
 
 :root { // TODO: Convert these into Sass-style variables
     --STICKY_HEADER_HEIGHT: 22vw;    //15vh; /* 80px; */
-    --PAGE_TITLE_HEIGHT: calc(16 / 717)vw; /* 40px; */ //4vh 400/717
+    --PAGE_TITLE_HEIGHT: 6vw; /* 40px; */ //4vh 400/717
     --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
     --sticky-header-text-padding: 7px;
     //menu_variables
