@@ -164,6 +164,14 @@ h2 {
         /* display: inline-block;
         max-width: 100%; */
     }
+
+    &.page_title {
+        font-size: 5vw;
+
+        @media screen and (orientation: landscape) {
+            font-size: 3vw;
+        }
+    }
 }
 
 h3, h4 {
@@ -301,10 +309,6 @@ hr {
     text-align: center;
     font-family: 'Karla', sans-serif;
     z-index: 1;
-
-    h2 {
-        font-size: clamp(1.5rem, 3vw, 4.5rem);
-    }
 }
 
 #sticky_page_title.stick_on_scroll {
