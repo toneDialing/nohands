@@ -168,14 +168,14 @@ p {
   font-size: clamp(0.9rem, 3vw, 1.5rem);
   line-height: 1.5;
   text-align: center;
+  /* &#contact_bottom_text {
+      background-color: $roseda_green;
+      margin: 0 20vw;
+      border-radius: 1rem;
+  } */
 }
 p.contact {
   color: #d7f9f1;
-}
-p#contact_bottom_text {
-  background-color: #708b75;
-  margin: 0 20vw;
-  border-radius: 1rem;
 }
 
 ul {
@@ -415,6 +415,14 @@ a:active {
   }
 }
 
+#contact_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  min-height: 0;
+}
+
 #svg_container {
   /* border: 1px solid purple; */
   height: 50vh;
@@ -429,6 +437,7 @@ a:active {
   /* box-shadow: 0 0 10px #333; */
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
+  border: 1px solid blue;
 }
 @media screen and (orientation: landscape) {
   #svg_container {

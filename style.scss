@@ -188,11 +188,11 @@ p {
         color: $mint_green;
     }
 
-    &#contact_bottom_text {
+    /* &#contact_bottom_text {
         background-color: $roseda_green;
         margin: 0 20vw;
         border-radius: 1rem;
-    }
+    } */
 }
 
 ul {
@@ -445,6 +445,15 @@ a:active {
     }
 }
 
+//New attempt to fix text overflow
+#contact_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    min-height: 0;
+}
+
 // ** SVG Image Container ** //
     //The thin black SVG border line seems to appear only when using "responsive" dimensions
     //in Chrome's inspect tool, so I assume it's not actually an issue.
@@ -462,6 +471,7 @@ a:active {
     /* box-shadow: 0 0 10px #333; */
     font-family: 'Fira Sans', sans-serif;
     color: goldenrod;
+    border: 1px solid blue;
 
     @media screen and (orientation: landscape) {
         background-position: bottom;
