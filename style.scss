@@ -721,8 +721,13 @@ a:active {
 } */
 
 section.recording {
+    background-image: url('./SVGs/gold_wave3.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     h3 {
+        color: $mint_green;
         padding: 1rem;
     }
 

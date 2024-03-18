@@ -659,7 +659,14 @@ a:active {
         border: 1px solid red;
     }
 } */
+section.recording {
+  background-image: url("./SVGs/gold_wave3.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 section.recording h3 {
+  color: #d7f9f1;
   padding: 1rem;
 }
 section.recording p {
