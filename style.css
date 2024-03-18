@@ -440,7 +440,6 @@ a:active {
   /* box-shadow: 0 0 10px #333; */
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
-  border: 1px solid blue;
 }
 @media screen and (orientation: landscape) {
   #svg_container {
@@ -673,7 +672,6 @@ section.contact {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 1px solid blue;
   background-image: url("./SVGs/gold_wave3.svg");
   background-position: bottom;
   background-repeat: no-repeat;
