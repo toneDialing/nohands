@@ -179,6 +179,7 @@ p {
 }
 p.contact {
   color: #d7f9f1;
+  padding: 1rem 2rem;
 }
 p .emojis {
   padding: 0 30vw;
