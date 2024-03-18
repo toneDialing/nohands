@@ -492,7 +492,7 @@ a:active {
 
     //iframe container
     #spotify_container_outer {
-        width: clamp(350px, 75vw, max(800px, 50vw));
+        width: clamp(320px, 75vw, max(800px, 50vw));
         margin: auto;
         overflow: hidden;
 
@@ -544,7 +544,7 @@ a:active {
     background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
 
     #blurb {
-        width: clamp(350px, 80vw, 1200px);
+        width: clamp(320px, 80vw, 1200px);
         margin: auto;
         padding: 1rem 1rem 2rem; /* left/right padding: clamp(2rem, 20vw, 3rem) */
         font-family: 'Fira Sans', sans-serif;
@@ -597,7 +597,7 @@ a:active {
     //#1481ba lightblue #247ba0 darkerblue
 
     #youtube_container_outer {
-        width: clamp(350px, 75vw, max(800px, 50vw));
+        width: clamp(320px, 75vw, max(800px, 50vw));
         margin: auto;
         overflow: hidden;
 
