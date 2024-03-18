@@ -649,16 +649,6 @@ a:active {
   background-color: #333;
 }
 
-#video {
-  border: 1px solid green;
-  display: flex;
-  justify-content: center;
-}
-#video iframe {
-  border: 1px solid red;
-  /* border-radius: 12px; */
-}
-
 /* #off_the_curb_spotify {
     border: 1px solid green;
     display: flex;
@@ -668,6 +658,55 @@ a:active {
         border: 1px solid red;
     }
 } */
+section.recording #spotify_container_outer {
+  width: clamp(320px, 75vw, max(800px, 50vw));
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+section.recording #spotify_container_outer #spotify_container_inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: auto;
+  padding: 0% 0% 56.25%;
+  overflow: hidden;
+}
+section.recording #spotify_container_outer #spotify_container_inner iframe {
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.live_performance #youtube_container_outer {
+  width: clamp(320px, 75vw, max(800px, 50vw));
+  margin: auto;
+  overflow: hidden;
+}
+section.live_performance #youtube_container_outer #youtube_container_inner {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 0;
+  margin: auto;
+  padding: 0% 0% 56.25%;
+  overflow: hidden;
+}
+section.live_performance #youtube_container_outer #youtube_container_inner iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 section.contact {
   min-height: 70vh;
   flex-grow: 1;
