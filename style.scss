@@ -122,6 +122,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 main {
@@ -721,6 +722,16 @@ a:active {
 
 section.recording {
 
+    h3 {
+        padding: 1rem;
+    }
+
+    p {
+        padding: 1rem;
+        width: clamp(320px, 80vw, 1200px);
+        margin: auto;
+    }
+
     #spotify_container_outer {
         width: clamp(320px, 75vw, max(800px, 50vw));
         margin: auto;
@@ -751,6 +762,10 @@ section.recording {
 }
 
 section.live_performance {
+
+    h3 {
+        padding: 1rem;
+    }
 
     #youtube_container_outer {
         width: clamp(320px, 75vw, max(800px, 50vw));
