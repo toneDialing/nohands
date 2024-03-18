@@ -583,7 +583,6 @@ a:active {
     }
 }
 
-//Improve this positioning
 #ep img {
     display: block;
     width: clamp(320px, 50vw, 500px);
@@ -721,6 +720,7 @@ a:active {
 } */
 
 section.recording {
+    background-color: goldenrod;
     background-image: url('./SVGs/gold_wave3.svg');
     background-position: bottom;
     background-repeat: no-repeat;
@@ -767,8 +767,11 @@ section.recording {
 }
 
 section.live_performance {
+    background-color: black;
+    background-image: linear-gradient(to bottom, goldenrod, rgb(157, 118, 22));
 
     h3 {
+        color: $mint_green;
         padding: 1rem;
     }
 
