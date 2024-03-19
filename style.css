@@ -732,6 +732,11 @@ section.live_performance #youtube_container_outer #youtube_container_inner ifram
   border: 0;
 }
 
+span.show_data_item::after {
+  content: "\a";
+  white-space: pre;
+}
+
 section.contact {
   min-height: 70vh;
   flex-grow: 1;
