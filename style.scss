@@ -800,6 +800,20 @@ section.live_performance {
     }
 }
 
+section.show_listing {
+
+    h3 {
+        padding: 1rem 2rem 0;
+        color: $mint_green;
+    }
+
+    h4 {
+        padding: 0.5rem 2rem;
+        color: $mint_green;
+        font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+    }
+}
+
 span.show_data_item::after {
     content: "\a";
     white-space: pre;

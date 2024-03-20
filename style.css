@@ -732,6 +732,16 @@ section.live_performance #youtube_container_outer #youtube_container_inner ifram
   border: 0;
 }
 
+section.show_listing h3 {
+  padding: 1rem 2rem 0;
+  color: #d7f9f1;
+}
+section.show_listing h4 {
+  padding: 0.5rem 2rem;
+  color: #d7f9f1;
+  font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+}
+
 span.show_data_item::after {
   content: "\a";
   white-space: pre;
