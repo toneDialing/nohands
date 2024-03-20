@@ -138,7 +138,7 @@ main.stick_on_scroll_with_page_title {
     padding-top: var(--TOTAL_HEADER_HEIGHT);
 }
 
-main.contact {
+main.contact, main.shows {
     background-color: goldenrod;
     display: flex;
     flex-direction: column;
@@ -800,6 +800,17 @@ section.live_performance {
     }
 }
 
+section.shows {
+    min-height: 70vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./SVGs/gold_wave3.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 section.show_listing {
 
     h3 {
@@ -811,6 +822,10 @@ section.show_listing {
         padding: 0.5rem 2rem;
         color: $mint_green;
         font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+    }
+
+    p {
+        padding: 0 2rem 1rem;
     }
 }
 

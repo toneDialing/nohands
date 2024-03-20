@@ -123,7 +123,7 @@ main.stick_on_scroll_with_page_title {
   padding-top: var(--TOTAL_HEADER_HEIGHT);
 }
 
-main.contact {
+main.contact, main.shows {
   background-color: goldenrod;
   display: flex;
   flex-direction: column;
@@ -732,6 +732,17 @@ section.live_performance #youtube_container_outer #youtube_container_inner ifram
   border: 0;
 }
 
+section.shows {
+  min-height: 70vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./SVGs/gold_wave3.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section.show_listing h3 {
   padding: 1rem 2rem 0;
   color: #d7f9f1;
@@ -740,6 +751,9 @@ section.show_listing h4 {
   padding: 0.5rem 2rem;
   color: #d7f9f1;
   font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+}
+section.show_listing p {
+  padding: 0 2rem 1rem;
 }
 
 span.show_data_item::after {
