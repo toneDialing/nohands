@@ -9,8 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-//TODO: Header text no longer sticks after adjusting window size before refreshing (works after refresh)
-
 // RESET //
 *, *::after, *::before {
     margin: 0;
@@ -34,9 +32,9 @@ $roseda_green: #708b75;
 $mint_green: #d7f9f1;
 $forest_green: #2a652c;
 
-:root { // TODO: Convert these into Sass-style variables
-    --STICKY_HEADER_HEIGHT: 22vw;    //15vh; /* 80px; */
-    --PAGE_TITLE_HEIGHT: 6vw; /* 40px; */ //4vh 400/717
+:root {
+    --STICKY_HEADER_HEIGHT: 22vw;
+    --PAGE_TITLE_HEIGHT: 6vw;
     --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
     --sticky-header-text-padding: 7px;
     //menu_variables
@@ -90,13 +88,9 @@ $forest_green: #2a652c;
     @media screen and (orientation: landscape) {
         --STICKY_HEADER_HEIGHT: 7vw;
         --sticky-header-text-padding: 3px;
-        --PAGE_TITLE_HEIGHT: calc(1vw * ((4.2*717)/900)); // 5vh 900/717  42/717vw
+        --PAGE_TITLE_HEIGHT: calc(1vw * ((4.2*717)/900));
         --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
     }
-
-    /* @media screen and (min-width: 481px) {
-        --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
-    } */
 }
 
 // Utility Classes //
@@ -133,7 +127,6 @@ main.stick_on_scroll {
     padding-top: var(--STICKY_HEADER_HEIGHT);
 }
 
-//TODO: Padding isn't calculating at all
 main.stick_on_scroll_with_page_title {
     padding-top: var(--TOTAL_HEADER_HEIGHT);
 }
@@ -147,7 +140,7 @@ main.contact, main.shows {
 h1 {
     max-width: 80vw;
     margin: auto;
-    font-size: 10vw;  /* clamp(2rem, 7vw, 5rem) */ //7rem
+    font-size: 10vw;
     text-align: center;
     line-height: 1;
 
@@ -163,9 +156,7 @@ h2 {
     text-align: center;
 
     #on_deck_slogan {
-        font-size: clamp(1rem, 5vw, 4rem); /* min(2.5rem, 5vw); */ //maybe clamp this like h2 above
-        /* display: inline-block;
-        max-width: 100%; */
+        font-size: clamp(1rem, 5vw, 4rem);
     }
 
     &.page_title {
@@ -200,12 +191,6 @@ p {
             padding: 0;
         }
     }
-
-    /* &#contact_bottom_text {
-        background-color: $roseda_green;
-        margin: 0 20vw;
-        border-radius: 1rem;
-    } */
 }
 
 ul {

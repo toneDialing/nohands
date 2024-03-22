@@ -24,7 +24,7 @@ input, button, textarea {
 
 :root {
   --STICKY_HEADER_HEIGHT: 22vw;
-  --PAGE_TITLE_HEIGHT: 6vw; /* 40px; */
+  --PAGE_TITLE_HEIGHT: 6vw;
   --TOTAL_HEADER_HEIGHT: calc(var(--STICKY_HEADER_HEIGHT) + var(--PAGE_TITLE_HEIGHT));
   --sticky-header-text-padding: 7px;
   --menu-container-height: 2.5rem;
@@ -39,9 +39,6 @@ input, button, textarea {
   --nav-display-width: 4rem;
   --nav-font-size: 1rem;
   --nav-dropdown-distance: 20rem;
-  /* @media screen and (min-width: 481px) {
-      --STICKY_HEADER_HEIGHT: 15vh; /* 45px; 
-  } */
 }
 @media screen and (min-width: 375px) {
   :root {
@@ -132,7 +129,7 @@ main.contact, main.shows {
 h1 {
   max-width: 80vw;
   margin: auto;
-  font-size: 10vw; /* clamp(2rem, 7vw, 5rem) */
+  font-size: 10vw;
   text-align: center;
   line-height: 1;
 }
@@ -149,9 +146,7 @@ h2 {
   text-align: center;
 }
 h2 #on_deck_slogan {
-  font-size: clamp(1rem, 5vw, 4rem); /* min(2.5rem, 5vw); */
-  /* display: inline-block;
-  max-width: 100%; */
+  font-size: clamp(1rem, 5vw, 4rem);
 }
 h2.page_title {
   font-size: 5vw;
@@ -172,11 +167,6 @@ p {
   line-height: 1.5;
   text-align: center;
   padding: 0 2rem;
-  /* &#contact_bottom_text {
-      background-color: $roseda_green;
-      margin: 0 20vw;
-      border-radius: 1rem;
-  } */
 }
 p.contact {
   color: #d7f9f1;
