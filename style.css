@@ -207,26 +207,10 @@ a:any-link {
   color: white;
 }
 
-/* NOT USED */
-.border {
-  aspect-ratio: 900/100;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* overflow: visible; */
-}
-
 hr {
   height: 2px;
   border: 1px;
   background-color: #8800cc;
-}
-
-/* NOT USED */
-.blue_wave {
-  background-image: url("./SVGs/test.svg");
-  z-index: 100;
 }
 
 .header {
@@ -251,8 +235,6 @@ hr {
   position: relative;
   width: 100%;
   height: var(--STICKY_HEADER_HEIGHT);
-  /* position: sticky; */
-  /* top: 0; */
   z-index: 2;
 }
 
@@ -262,12 +244,10 @@ hr {
 }
 
 #sticky_header_text {
-  /* height: var(--STICKY_HEADER_HEIGHT); */
   padding: var(--sticky-header-text-padding) 0;
   text-align: center;
   font-family: "Prompt", sans-serif;
   color: #EEE;
-  /* border: 1px solid green; */
 }
 #sticky_header_text a:hover, #sticky_header_text a:focus-visible, #sticky_header_text a:active {
   text-decoration: none;
@@ -395,7 +375,6 @@ a:active {
 
 #hero {
   position: relative;
-  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -407,7 +386,6 @@ a:active {
 }
 
 #hero_image {
-  /* height: 80vh; */
   object-fit: contain;
 }
 @media screen and (orientation: landscape) {
@@ -419,7 +397,6 @@ a:active {
 }
 
 #svg_container {
-  /* border: 1px solid purple; */
   height: 50vh;
   min-height: 400px;
   display: flex;
@@ -429,7 +406,6 @@ a:active {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  /* box-shadow: 0 0 10px #333; */
   font-family: "Fira Sans", sans-serif;
   color: goldenrod;
 }
@@ -471,20 +447,6 @@ a:active {
   height: 100%;
 }
 
-/* #slogan2_container {
-    color: white;
-    background-color: goldenrod;
-    font-family: 'Fira Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid blue;
-
-    h3 {
-        padding: 1rem;
-        color: $mint_green;
-    }
-} */
 .hr_homepage {
   border: 1px solid black;
 }
@@ -496,7 +458,7 @@ a:active {
 #fade_container #blurb {
   width: clamp(320px, 80vw, 1200px);
   margin: auto;
-  padding: 1rem 1rem 2rem; /* left/right padding: clamp(2rem, 20vw, 3rem) */
+  padding: 1rem 1rem 2rem;
   font-family: "Fira Sans", sans-serif;
 }
 #fade_container #instagram_container {
@@ -511,8 +473,6 @@ a:active {
   color: goldenrod;
   background-color: #2a2a2a;
   box-shadow: 0 0 10px #333;
-  /* color: #374038; //Exact opposite of background color
-  background-color: #c8bfc7; */
   font-family: "Fira Sans", sans-serif;
 }
 #new_sonic_world #paragraph_links {
@@ -562,19 +522,11 @@ a:active {
   border: 0;
 }
 
-/* Currently very indecisive about colors */
-/* Update: I think Roseda green is the winner */
 .about {
-  /* border: 1px solid #ca054d; rose red */
-  /* border: 1px solid #776885; light purple */
-  border: 1px solid #93748a; /* Mountbatten pink */
-  /* border: 1px solid #ef767a; */ /* Light coral */
-  border: 1px solid #76877d; /* Battleship gray */
   border: 1px solid #708b75; /* Roseda green */
 }
 
 .musician_bio {
-  /* border: 1px solid red; */
   padding: 20px;
   display: flow-root;
 }
@@ -613,42 +565,10 @@ a:active {
   text-align: right;
 }
 
-/* || Full Screen Settings || */
-/* .musician_bio {
-    border: 1px solid red;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-
-    .musician_headshot {
-        width: 35%;
-
-        img {
-            width: 100%;
-            height: auto;
-            min-width: 100px;
-        }
-    }
-}
-
-.musician_bio.right {
-    justify-content: flex-end;
-} */
 .h2_music {
   background-color: #333;
 }
 
-/* #off_the_curb_spotify {
-    border: 1px solid green;
-    display: flex;
-    justify-content: center;
-
-    iframe {
-        border: 1px solid red;
-    }
-} */
 section.recording {
   background-color: goldenrod;
   background-image: url("./SVGs/gold_wave3.svg");
