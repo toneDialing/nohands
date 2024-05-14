@@ -665,6 +665,11 @@ section.show_listing h4 {
 section.show_listing p {
   padding: 0 2rem 1rem;
 }
+section.show_listing .ticket_link {
+  padding: 0.5rem 2rem;
+  color: #2ff7c8;
+  font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+}
 
 span.show_data_item::after {
   content: "\a";

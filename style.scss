@@ -31,6 +31,7 @@ $faded_yellow: rgb(255, 240, 171);
 $roseda_green: #708b75;
 $mint_green: #d7f9f1;
 $forest_green: #2a652c;
+$hyperlink_teal: #2ff7c8;
 
 :root {
     --STICKY_HEADER_HEIGHT: 22vw;
@@ -719,6 +720,12 @@ section.show_listing {
 
     p {
         padding: 0 2rem 1rem;
+    }
+
+    .ticket_link {
+        padding: 0.5rem 2rem;
+        color: $hyperlink_teal;
+        font-size: clamp(0.95rem, 3.5vw, 1.75rem);
     }
 }
 
