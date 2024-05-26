@@ -670,6 +670,9 @@ section.show_listing .ticket_link {
   color: #2ff7c8;
   font-size: clamp(0.95rem, 3.5vw, 1.75rem);
 }
+section.show_listing .show_blurb {
+  font-style: italic;
+}
 
 span.show_data_item::after {
   content: "\a";

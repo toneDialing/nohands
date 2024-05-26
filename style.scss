@@ -727,6 +727,10 @@ section.show_listing {
         color: $hyperlink_teal;
         font-size: clamp(0.95rem, 3.5vw, 1.75rem);
     }
+
+    .show_blurb {
+        font-style: italic;
+    }
 }
 
 span.show_data_item::after {
